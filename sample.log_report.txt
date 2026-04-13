@@ -1,0 +1,31 @@
+Apache Log Security Report
+Generated: 2026-04-13 22:36:15
+Log file: sample.log
+
+Total requests: 888
+Unique IPs: 9
+Error rate: 30.3%
+
+Suspicious IPs:
+
+  203.0.113.42
+    Threats: SCANNER, HIGH_ERROR_RATE
+    Requests: 240 | Errors: 240 (100%)
+    Attack paths: /.env, /.git/config, /etc/passwd, /phpMyAdmin, /phpmyadmin, /wp-admin, /xmlrpc.php
+
+  198.51.100.17
+    Threats: BRUTE_FORCE
+    Requests: 340 | Errors: 0 (0%)
+    Attack paths: /wp-login.php
+
+  192.0.2.88
+    Threats: SCANNER
+    Requests: 4 | Errors: 4 (100%)
+    Attack paths: /.env, /etc/passwd, /wp-admin, /xmlrpc.php
+
+  198.51.100.99
+    Threats: SCANNER
+    Requests: 4 | Errors: 4 (100%)
+    Attack paths: /.git/config, /etc/passwd, /phpMyAdmin, /phpmyadmin, /xmlrpc.php
+
+--- End of report ---
